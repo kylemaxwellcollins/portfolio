@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="public/styles/style.css">
-</head>
-<body>
-	<h1>Hello World</h1>
-	<script src="public/scripts/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kyle Collins</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/styles/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER STARTS HERE -->
+    <header class="header" id="home">
+      <div class="wrapper">
+        <h1>kyle collins</h1>
+        <h4>front-end web developer</h4>
+      </div>
+    </header>
+
+    <nav id="nav">
+      <div class="wrapper nav">
+        <ul class="nav__list">
+          <li class="nav__list__item">
+            <a class="nav__list__link" href="#home">home</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__link" href="#about">about me</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__link" href="#skills">skills</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__link" href="#work">work</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN STARTS HERE -->
+    <main class="content">
+      <!-- ABOUT ME SECTION -->
+      <section class="section__about" id="about">
+        <div class="wrapper">
+          <div class="aboutContainer">
+            <div class="subheadingContainer">
+              <h2 class="subheading">about me</h2>
+              <h2 class="subheading--large">about</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK SECTION -->
+      <section class="section__work" id="work">
+        <div class="headingImage">
+          <img src="./assets/about-header.JPG" alt="" />
+        </div>
+        <div class="overlay"></div>
+
+        <div class="wrapper">
+          <div class="workContainer">
+            <div class="subheadingContainer--right">
+              <h2 class="subheading--right">work</h2>
+              <h2 class="subheading--large">work</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section class="section__skills" id="skills">
+        <div class="wrapper">
+          <div class="skillsContainer">
+            <div class="subheadingContainer">
+              <h2 class="subheading">skills</h2>
+              <h2 class="subheading--large">skills</h2>
+            </div>
+          </div>
+        </div>
+        <div class="skills__icons">
+          <ul></ul>
+          <i class="icon devicon-html5-plain"></i>
+          <i class="icon devicon-css3-plain"></i>
+          <i class="icon devicon-sass-original"></i>
+          <i class="icon devicon-javascript-plain"></i>
+          <i class="icon devicon-jquery-plain"></i>
+          <i class="icon devicon-react-original"></i>
+          <i class="icon devicon-visualstudio-plain"></i>
+          <i class="icon devicon-git-plain"></i>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="section__contact" id="contact">
+        <div class="wrapper">
+          <div class="contactContainer">
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER STARTS HERE -->
+    <footer><p>Kyle Collins &copy; 2018</p></footer>
+
+    <script src="public/scripts/app.js"></script>
+  </body>
 </html>

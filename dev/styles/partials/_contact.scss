@@ -1,0 +1,14 @@
+.section__contact {
+  background: $black-shade;
+  .subheading--light {
+    color: white;
+    &--large {
+      @include primaryFont(120, $white-shade);
+      position: relative;
+      top: -170px;
+      right: -23px;
+      margin: 0;
+      mix-blend-mode: color-burn;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+h1 {
+  @include primaryFont(60, white);
+  font-weight: 700;
+}
+
+h4 {
+  @include primaryFont(14, white);
+  letter-spacing: 6px;
+}
+
+p {
+  @include secondaryFont(16, $black-shade);
+}
+
+// EXTENDS FOR SUBHEADING STYLES
+
+%subheading {
+  @include primaryFont(40, $black-shade);
+  position: relative;
+  display: inline-block;
+  margin: 90px 0 60px 0;
+  z-index: 10;
+}
+
+%subheadingAfter {
+  content: "";
+  width: 360px;
+  height: 200px;
+  top: -90px;
+  position: absolute;
+}
+
+%subheading--large {
+  @include primaryFont(120, $white-shade);
+  position: absolute;
+  top: 0;
+  margin: 0;
+  mix-blend-mode: overlay;
+}
+
+// SUBHEADING STYLES
+
+.subheadingContainer {
+  position: relative;
+  .subheading {
+    @extend %subheading;
+    &:after {
+      @extend %subheadingAfter;
+      background: url("../../../assets/subheading-border.png");
+    }
+    &--large {
+      @extend %subheading--large;
+    }
+  }
+}
+
+.subheadingContainer--right {
+  position: relative;
+  text-align: right;
+  .subheading {
+    &--right {
+      @extend %subheading;
+      &:after {
+        @extend %subheadingAfter;
+        background: url("../../../assets/subheading-border-rev.png");
+      }
+    }
+    &--large {
+      @extend %subheading--large;
+      right: 0;
+    }
+  }
+}
+
+.section {
+  &__about {
+    .subheading {
+      &:after {
+        right: -130px;
+      }
+    }
+  }
+  &__skills {
+    .subheading {
+      &:after {
+        right: -218px;
+      }
+    }
+  }
+  &__work {
+    .subheading--right {
+      &:after {
+        right: -5px;
+      }
+    }
+  }
+}
+
+// ICON STYLES
+
+.skills__icons {
+  border: 1px solid $black-shade;
+  text-align: center;
+  padding: 100px 0;
+
+  i {
+    color: $black-shade;
+    font-size: 100px;
+    transition: all 0.3s;
+    margin: 0 30px;
+    &:hover {
+      color: $accent;
+      transform: scale(1.1);
+    }
+  }
+}

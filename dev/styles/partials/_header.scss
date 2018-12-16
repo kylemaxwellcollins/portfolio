@@ -1,0 +1,22 @@
+header {
+  background: 
+    // url("../../../assets/dash.png") 50% 40% no-repeat,
+    // url("../../../assets/dash.png") 50% 63% no-repeat,
+    url("../../../assets/triangle-up.png") 50% 45% no-repeat,
+    url("../../../assets/triangle-down.png") 50% 55% no-repeat,
+    url("../../../assets/overlay.png") center/cover,
+    url("../../../assets/header.jpg") center top/cover fixed;
+  height: calc(92vh - 20px);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+
+  h4 {
+    display: inline-block;
+    margin: 30px;
+    border-bottom: 4px solid $accent;
+    line-height: 2;
+  }
+
+}

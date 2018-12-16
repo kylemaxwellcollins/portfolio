@@ -1,0 +1,36 @@
+nav {
+  background: $black-shade;
+  height: 8vh;
+  z-index: 20;
+  .nav__list {
+    // background: $black-shade;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 10px;
+    height: 8vh;
+    // :last-child a {
+    //   padding-right: 0;
+    // }
+    &__link {
+      @include primaryFont(14, white);
+      padding: 20px;
+      transition: color 0.5s;
+      font-weight: bold;
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}
+
+.fixNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+.fixNav + main {
+  padding-top: 8vh;
+}
