@@ -2,6 +2,21 @@
   position: relative;
   .aboutContainer {
     position: relative;
+    &__half {
+      display: flex;
+      justify-content: space-between
+    }
+    &__image{
+      background: grey;
+      width: 50%;
+      margin: 80px ;
+      // height: 100%;
+
+    }
+    &__text {
+      // width: 50%;
+      
+    }
   }
 
 

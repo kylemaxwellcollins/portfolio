@@ -1,0 +1,22 @@
+.section__skills {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/skills-bg.jpg") 50% 50% / cover;
+    border-top: 3px solid $white-shade;
+    border-bottom: 3px solid $white-shade;
+  .skillsContainer {
+    display: flex;
+    align-items: center;
+    color: $white-shade;
+    .skills__list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-left: 50px;
+      &__item {
+        font-size: 100px;
+        padding: 20px 0 20px 60px;
+      }
+    }
+  }
+}
