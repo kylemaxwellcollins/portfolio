@@ -30,7 +30,6 @@
   }
 
   .workContainer {
-    // overflow-x: hidden;
     &__item {
       align-items: center;
       display: flex;
@@ -101,11 +100,4 @@
   }
 }
 
-// .workContainer {
-//       &__item {
-//         flex-direction: column;
-//         &--right {
-//           flex-direction: column;
-//         }
-//       }
-//     }
+
