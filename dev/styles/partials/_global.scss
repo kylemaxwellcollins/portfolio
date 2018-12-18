@@ -13,7 +13,6 @@ $accent: #e5a01e;
   // font-size: $size * 1px;
   font-size: ($size / 10) * 1rem;
   text-transform: uppercase;
-  // letter-spacing: 1px;
 }
 
 @mixin secondaryFont($size, $color) {

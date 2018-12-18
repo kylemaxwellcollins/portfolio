@@ -1,13 +1,14 @@
 .section__contact {
+  background: url("../../../assets/pattern.svg");
   .contactContainer {
     // display: flex;
     // flex-direction: row-reverse;
     // justify-content: space-between;
     // align-items: center;
   }
-  .subheadingContainer--right {
-    width: 50%;
-  }
+  // .subheadingContainer--right {
+  //   width: 50%;
+  // }
   .contactForm {
     @include secondaryFont(16, $black-shade);
     
@@ -26,7 +27,7 @@
       padding: 10px 10px;
       margin-bottom: 20px;
       resize: none;
-      // box-shadow: 0px 5px 10px rgba($darkGrey, 0.1);
+      box-shadow: 0px 5px 10px rgba($darkGrey, 0.2);
     }
 
     input[type="submit"] {
@@ -35,11 +36,11 @@
       color: $darkGrey;
 
       transition: box-shadow 0.5s;
-      // box-shadow: 0px 8px 10px rgba($darkGrey, 0.2);
+      box-shadow: 0px 8px 10px rgba($darkGrey, 0.2);
       &:hover {
         background: $accent;
         color: $white-shade;
-        // box-shadow: 0px 5px 10px rgba($darkGrey, 0.1);
+        box-shadow: 0px 5px 10px rgba($accent, 0.3);
       }
     }
   }

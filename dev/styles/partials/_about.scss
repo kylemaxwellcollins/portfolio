@@ -1,25 +1,29 @@
 .section__about {
-
   position: relative;
   .aboutContainer {
     position: relative;
     &__half {
       display: flex;
-      justify-content: space-between
+      justify-content: space-between;
     }
-    &__image{
+    &__image {
       background: grey;
       width: 50%;
-      margin: 80px ;
+      margin: 80px 0 50px 80px;
       // height: 100%;
-
-    }
-    &__text {
-      // width: 50%;
-      
     }
   }
-
-
 }
 
+@media (max-width: 860px) {
+  .section__about {
+    .subheadingContainer {
+      width: 100%;
+    }
+    .aboutContainer {
+      &__image {
+        display: none;
+      }
+    }
+  }
+}
