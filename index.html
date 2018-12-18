@@ -17,6 +17,7 @@
       integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="public/styles/style.css" />
   </head>
 
@@ -58,7 +59,11 @@
         <div class="wrapper">
           <div class="aboutContainer">
             <div class="aboutContainer__half">
-              <div class="subheadingContainer">
+              <div
+                class="subheadingContainer"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
                 <h2 class="subheading">about me</h2>
                 <h2 class="subheading--large">about</h2>
                 <div class="aboutContainer__text textContainer">
@@ -78,7 +83,14 @@
                   </p>
                 </div>
               </div>
-              <div class="aboutContainer__image"><img src="" alt="" /></div>
+              <div
+                class="aboutContainer__image"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
+                <img src="" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -86,14 +98,19 @@
 
       <!-- WORK SECTION -->
       <!-- WORK SECTION HEADER -->
-      <section class="section__work" id="work">
+      <section
+        class="section__work"
+        id="work"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
         <div class="section__work__header">
           <div class="headingImage">
             <img src="./assets/about-header.JPG" alt="" />
           </div>
           <div class="overlay"></div>
-          <div class="wrapper">
-            <div class="subheadingContainer--right">
+          <div class="wrapper blend">
+            <div class="subheadingContainer--right" data-aos="fade-up">
               <h2 class="subheading--right">work</h2>
               <h2 class="subheading--large">work</h2>
             </div>
@@ -104,76 +121,168 @@
           <div class="workContainer">
             <!-- WORK ITEMS -->
             <div class="workContainer__item--right">
-              <div class="workContainer__item__image">
-                <img src="" alt="" />
+              <div
+                class="workContainer__item__image"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <img src="./assets/youtune-mockup.png" alt="" />
               </div>
-              <div class="workContainer__item__text textContainer">
-                <h4>stuff</h4>
-                <h3>Project 1</h3>
+              <div
+                class="workContainer__item__text textContainer"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                <h4>javascript</h4>
+                <h3>YouTune</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
                   rem optio dicta. Nemo velit aspernatur, ipsum facilis ut
                   accusantium tempora optio. Amet, quo autem blanditiis aperiam
                   illum aspernatur fuga nesciunt.
                 </p>
+                <p class="toolsUsed" >JavaScript / JQuery / HTML / CSS / Sass / Responsive.</p>
+
+                <div class="workContainer__item__links">
+                  <a href="#" class="btn__view">
+                    <span>
+                      <span> <span>View Code</span> </span>
+                    </span>
+                  </a>
+                  <a href="#" class="btn__view">
+                    <span>
+                      <span> <span>View Site</span> </span>
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
 
             <div class="workContainer__item">
-              <div class="workContainer__item__text textContainer">
-                <h4>stuff</h4>
-                <h3>Project 2</h3>
+              <div
+                class="workContainer__item__text textContainer"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                <h4>react & firebase</h4>
+                <h3>flex fitness</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
                   rem optio dicta. Nemo velit aspernatur, ipsum facilis ut
                   accusantium tempora optio. Amet, quo autem blanditiis aperiam
                   illum aspernatur fuga nesciunt.
                 </p>
+                <p class="toolsUsed">React / Firebase / Authorization / React Router / Sass / Responsive</p>
+
+                <div class="workContainer__item__links">
+                  <a href="#" class="btn__view">
+                    <span>
+                      <span> <span>View Code</span> </span>
+                    </span>
+                  </a>
+                  <a href="#" class="btn__view">
+                    <span>
+                      <span> <span>View Site</span> </span>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <div class="workContainer__item__image">
+              <div
+                class="workContainer__item__image"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
                 <img src="" alt="" />
               </div>
             </div>
 
             <div class="workContainer__item--right">
-              <div class="workContainer__item__image">
-                <img src="" alt="" />
+              <div
+                class="workContainer__item__image"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <img src="./assets/dialect-mockup.png" alt="" />
               </div>
-              <div class="workContainer__item__text textContainer">
-                <h4>stuff</h4>
-                <h3>Project 3</h3>
+              <div
+                class="workContainer__item__text textContainer"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                <h4>api & jquery</h4>
+                <h3>Dialect Ditty</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
                   rem optio dicta. Nemo velit aspernatur, ipsum facilis ut
                   accusantium tempora optio. Amet, quo autem blanditiis aperiam
                   illum aspernatur fuga nesciunt.
                 </p>
+                <p class="toolsUsed">API / jQuery / Git Collaboration / Sass.</p>
+                
+                <div class="workContainer__item__links">
+                  <a href="#" class="btn__view">
+                    <span>
+                      <span> <span>View Code</span> </span>
+                    </span>
+                  </a>
+                  <a href="#" class="btn__view">
+                    <span>
+                      <span> <span>View Site</span> </span>
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
 
             <div class="workContainer__item">
-              <div class="workContainer__item__text textContainer">
-                <h4>stuff</h4>
-                <h3>Project 4</h3>
+              <div
+              class="workContainer__item__text textContainer"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                >
+                <h4>PSD Conversion</h4>
+                <h3>Harper</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
                   rem optio dicta. Nemo velit aspernatur, ipsum facilis ut
                   accusantium tempora optio. Amet, quo autem blanditiis aperiam
                   illum aspernatur fuga nesciunt.
                 </p>
+                <p class="toolsUsed">HTML / CSS / Sass / Responsive</p>
+
+                <div class="workContainer__item__links">
+                  <a href="#" class="btn__view">
+                    <span>
+                      <span> <span>View Code</span> </span>
+                    </span>
+                  </a>
+                  <a href="#" class="btn__view">
+                    <span>
+                      <span> <span>View Site</span> </span>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <div class="workContainer__item__image">
-                <img src="" alt="" />
+              <div
+                class="workContainer__item__image"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <img src="./assets/harper-mockup.png" alt="" />
               </div>
             </div>
           </div>
         </div>
+        <div id="particles-js"></div>
       </section>
 
       <!-- SKILLS SECTION -->
       <section class="section__skills" id="skills">
         <div class="wrapper">
-
           <div class="skillsContainer">
             <div class="subheadingContainer">
               <h2 class="subheading">skills</h2>
@@ -181,29 +290,106 @@
             </div>
 
             <ul class="skills__list">
-              <li class="skills__list__item"><i class="icon devicon-html5-plain"></i></li>
-              <li class="skills__list__item"><i class="icon devicon-css3-plain"></i></li>
-              <li class="skills__list__item"><i class="icon devicon-sass-original"></i></li>
-              <li class="skills__list__item"><i class="icon devicon-javascript-plain"></i></li>
-              <li class="skills__list__item"><i class="icon devicon-jquery-plain"></i></li>
-              <li class="skills__list__item"><i class="icon devicon-react-original"></i></li>
-              <li class="skills__list__item"><i class="icon devicon-visualstudio-plain"></i></li>
-              <li class="skills__list__item"><i class="icon devicon-git-plain"></i></li>
+              <li class="skills__list__item">
+                <i class="icon devicon-html5-plain"></i>
+                <!-- <p>HTML5</p> -->
+              </li>
+              <li class="skills__list__item">
+                <i class="icon devicon-css3-plain"></i>
+                <!-- <p>CSS3</p> -->
+              </li>
+              <li class="skills__list__item">
+                <i class="icon devicon-sass-original"></i>
+                <!-- <p>SASS</p> -->
+              </li>
+              <li class="skills__list__item">
+                <i class="icon devicon-javascript-plain"></i>
+                <!-- <p>JavaScript</p> -->
+              </li>
+              <li class="skills__list__item">
+                <i class="icon devicon-jquery-plain"></i>
+                <!-- <p>jQuery</p> -->
+              </li>
+              <li class="skills__list__item">
+                <i class="icon devicon-react-original"></i>
+                <!-- <p>React</p> -->
+              </li>
+              <li class="skills__list__item">
+                <i class="icon devicon-visualstudio-plain"></i>
+                <!-- <p>VSCode</p> -->
+              </li>
+              <li class="skills__list__item">
+                <i class="icon devicon-git-plain"></i>
+                <!-- <p>Git</p> -->
+              </li>
             </ul>
-
           </div>
         </div>
       </section>
 
       <!-- CONTACT SECTION -->
       <section class="section__contact" id="contact">
-        <div class="wrapper"><div class="contactContainer"></div></div>
+        <div class="wrapper">
+          <div class="contactContainer">
+            <!--
+              <div class="subheadingContainer--right">
+                <h2 class="subheading--right">contact</h2>
+                <h2 class="subheading--large">contact</h2>
+              </div>
+            -->
+            <form
+              class="contactForm"
+              action="https://formspree.io/kylemaxwellcollins@gmail.com"
+              method="POST"
+            >
+              <label for="name" class="visuallyhidden">Enter your name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name*"
+                required
+              />
+
+              <label for="email" class="visuallyhidden">Enter your email</label>
+              <input
+                type="email"
+                name="_replyto"
+                id="email"
+                placeholder="Email*"
+                required
+              />
+
+              <label for="message" class="visuallyhidden"
+                >How can i help?</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="How can I help?"
+                required
+              ></textarea>
+              <input type="submit" value="Send" />
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- FOOTER STARTS HERE -->
     <footer><p>Kyle Collins &copy; 2018</p></footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="public/scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+      particlesJS.load("particles-js", "/assets/particles.json", function() {
+        console.log("loaded");
+      });
+    </script>
   </body>
 </html>

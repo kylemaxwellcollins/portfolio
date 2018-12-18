@@ -104,7 +104,8 @@ p {
   }
   &__skills {
     .subheading {
-      color:$white-shade;
+      color: $white-shade;
+      margin: 90px 217px 60px 0;
       &:after {
         right: -218px;
       }
@@ -117,12 +118,23 @@ p {
       }
     }
   }
+  &__contact {
+    .subheading--right {
+      &:after {
+        right: -5px;
+      }
+    }
+  }
+}
+.blend {
+  .aos-animate{
+    mix-blend-mode: overlay;
+  }
 }
 
 // ICON STYLES
 
 .skills__icons {
-  // border: 1px solid $black-shade;
   text-align: center;
   padding: 100px 0;
 

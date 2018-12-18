@@ -1,3 +1,10 @@
+AOS.init({
+  disable: 'mobile'
+
+}
+);
+
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () { fixNav() };
 
@@ -15,4 +22,5 @@ function fixNav() {
     navbar.classList.remove("fixNav");
   }
 } 
+
 
