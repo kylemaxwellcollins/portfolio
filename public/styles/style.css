@@ -379,7 +379,6 @@ nav {
   padding-top: 8vh; }
 
 .nav-toggle {
-  user-select: none;
   cursor: pointer;
   height: 20px;
   position: fixed;
@@ -452,10 +451,6 @@ nav {
         color: white;
         font-size: 1.8rem;
         text-transform: uppercase; }
-  .fixNav {
-    position: fixed; }
-  .fixNav + main {
-    padding-top: 0; }
   .nav-toggle {
     display: block; }
   nav.expanded {

@@ -41,7 +41,6 @@ nav {
 }
 
 .nav-toggle {
-  user-select: none;
   cursor: pointer;
   height: 20px;
   position: fixed;
@@ -115,14 +114,6 @@ nav {
         @include primaryFont(18, white);
       }
     }
-  }
-  .fixNav {
-    // width: auto;
-    position: fixed;
-  }
-
-  .fixNav + main {
-    padding-top: 0;
   }
 
   .nav-toggle {
