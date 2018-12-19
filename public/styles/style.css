@@ -168,6 +168,10 @@ html {
 section {
   padding: 50px 0; }
 
+@media (max-width: 860px) {
+  .wrapper {
+    width: 95%; } }
+
 h1 {
   font-family: "Montserrat", Sans-Serif;
   color: white;
@@ -247,10 +251,15 @@ p {
 .subheadingContainer--right {
   position: relative;
   text-align: right; }
-  .subheadingContainer--right .subheading--right:after {
-    background: url("../../../assets/subheading-border-rev.png"); }
+  .subheadingContainer--right .subheading--right {
+    margin: 90px 0 60px 216px; }
+    .subheadingContainer--right .subheading--right:after {
+      background: url("../../../assets/subheading-border-rev.png"); }
   .subheadingContainer--right .subheading--large {
     right: 0; }
+
+.section__about .textContainer {
+  text-align: left; }
 
 .section__about .subheading:after {
   right: -130px; }
@@ -296,8 +305,17 @@ p {
       color: #e5a01e;
       transform: scale(1.1); }
 
+@media (max-width: 860px) {
+  .subheadingContainer,
+  .subheadingContainer--right {
+    width: 100%;
+    text-align: center; }
+  .aboutContainer .textContainer {
+    margin: 0 auto;
+    width: 80%; } }
+
 header {
-  background: url("../../../assets/triangle-up.png") 50% 45% no-repeat, url("../../../assets/triangle-down.png") 50% 55% no-repeat, url("../../../assets/overlay.png") center/cover, url("../../../assets/header.jpg") center top/cover fixed;
+  background: url("../../../assets/triangle-up.png") 50% 45%/400px 360px no-repeat, url("../../../assets/triangle-down.png") 50% 55%/400px 360px no-repeat, url("../../../assets/overlay.png") center/cover, url("../../../assets/header.jpg") center top/cover fixed;
   height: calc(92vh - 20px);
   text-align: center;
   display: flex;
@@ -308,6 +326,14 @@ header {
     margin: 30px;
     border-bottom: 4px solid #e5a01e;
     line-height: 2; }
+
+@media (max-width: 860px) {
+  header {
+    height: calc(100vh - 20px); } }
+
+@media (max-width: 430px) {
+  header {
+    background: url("../../../assets/triangle-up.png") 50% 45%/contain no-repeat, url("../../../assets/triangle-down.png") 50% 55%/contain no-repeat, url("../../../assets/overlay.png") center/cover, url("../../../assets/header.jpg") center top/cover fixed; } }
 
 nav {
   background: #2f2f2f;
@@ -338,6 +364,26 @@ nav {
 
 .fixNav + main {
   padding-top: 8vh; }
+
+@media (max-width: 860px) {
+  nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 500px;
+    bottom: 0;
+    height: 60vh;
+    display: none; }
+    nav .nav__list {
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: column;
+      margin: 50px 0;
+      height: auto; }
+      nav .nav__list__item {
+        padding: 20px 0; }
+  .fixNav {
+    width: auto; } }
 
 .section__about {
   position: relative; }
@@ -372,6 +418,14 @@ nav {
       .section__skills .skillsContainer .skills__list__item {
         font-size: 100px;
         padding: 20px 0 20px 60px; }
+
+@media (max-width: 860px) {
+  .section__skills .skillsContainer {
+    display: block; }
+    .section__skills .skillsContainer .skills__list {
+      margin: 0; }
+      .section__skills .skillsContainer .skills__list__item {
+        padding: 20px; } }
 
 .section__work {
   position: relative;

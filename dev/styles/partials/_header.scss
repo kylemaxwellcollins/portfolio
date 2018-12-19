@@ -2,8 +2,8 @@ header {
   background: 
     // url("../../../assets/dash.png") 50% 40% no-repeat,
     // url("../../../assets/dash.png") 50% 63% no-repeat,
-    url("../../../assets/triangle-up.png") 50% 45% no-repeat,
-    url("../../../assets/triangle-down.png") 50% 55% no-repeat,
+    url("../../../assets/triangle-up.png") 50% 45%/400px 360px no-repeat,
+    url("../../../assets/triangle-down.png") 50% 55%/400px 360px no-repeat,
     url("../../../assets/overlay.png") center/cover,
     url("../../../assets/header.jpg") center top/cover fixed;
   height: calc(92vh - 20px);
@@ -20,3 +20,23 @@ header {
   }
 
 }
+
+@media (max-width: 860px){
+  header {
+    height: calc(100vh - 20px);
+  }
+}
+
+
+@media (max-width:430px) {
+  header {
+      background: 
+    url("../../../assets/triangle-up.png") 50% 45%/ contain no-repeat,
+    url("../../../assets/triangle-down.png") 50% 55%/ contain no-repeat,
+    url("../../../assets/overlay.png") center/cover,
+    url("../../../assets/header.jpg") center top/cover fixed;
+  }
+
+}
+
+

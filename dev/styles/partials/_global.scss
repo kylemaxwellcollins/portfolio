@@ -38,4 +38,10 @@ section {
   padding: 50px 0;
 }
 
+@media (max-width: 860px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
 

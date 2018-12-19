@@ -82,6 +82,7 @@ p {
   .subheading {
     &--right {
       @extend %subheading;
+      margin: 90px 0 60px 216px;
       &:after {
         @extend %subheading__after;
         background: url("../../../assets/subheading-border-rev.png");
@@ -96,6 +97,9 @@ p {
 
 .section {
   &__about {
+    .textContainer {
+      text-align: left;
+    }
     .subheading {
       &:after {
         right: -130px;
@@ -126,6 +130,7 @@ p {
       }
       &--right {
         margin: 0 0 50px 0;
+        
         &:after {
           content: "";
           width: 0;
@@ -161,6 +166,22 @@ p {
     &:hover {
       color: $accent;
       transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .subheadingContainer,
+  .subheadingContainer--right {
+    
+    width: 100%;
+    text-align: center;
+  }
+
+  .aboutContainer {
+    .textContainer {
+      margin: 0 auto;
+      width: 80%;
     }
   }
 }

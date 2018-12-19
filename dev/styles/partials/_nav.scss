@@ -29,12 +29,33 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-
 }
 .fixNav + main {
   padding-top: 8vh;
 }
 
-@media (max-width: 860px){
-  
+@media (max-width: 860px) {
+  nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 500px;
+    bottom: 0;
+    height: 60vh;
+    .nav__list {
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: column;
+      margin: 50px 0;
+      height: auto;
+      &__item {
+        padding: 20px 0;
+      }
+    }
+
+    display: none;
+  }
+  .fixNav {
+    width: auto;
+  }
 }

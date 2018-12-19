@@ -1,8 +1,8 @@
 .section__skills {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("../../../assets/skills-bg.jpg") 50% 50% / cover fixed;
-    // border-top: 3px solid $accent;
-    // border-bottom: 3px solid $accent;
+  // border-top: 3px solid $accent;
+  // border-bottom: 3px solid $accent;
   .skillsContainer {
     display: flex;
     align-items: center;
@@ -21,6 +21,16 @@
   }
 }
 
-@media (max-width: 860px){
-  
+@media (max-width: 860px) {
+  .section__skills {
+    .skillsContainer {
+      display: block;
+      .skills__list {
+        margin: 0;
+        &__item {
+          padding: 20px;
+        }
+      }
+    }
+  }
 }
