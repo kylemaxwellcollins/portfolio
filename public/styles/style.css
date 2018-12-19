@@ -435,6 +435,7 @@ nav {
     right: 100%;
     left: 0;
     bottom: 0;
+    width: 100%;
     height: auto;
     transform: translateY(100%);
     transition: transform 0.8s; }
@@ -454,8 +455,7 @@ nav {
   .nav-toggle {
     display: block; }
   nav.expanded {
-    transform: translateY(0%);
-    width: 100%; } }
+    transform: translateY(0%); } }
 
 .section__about {
   position: relative; }

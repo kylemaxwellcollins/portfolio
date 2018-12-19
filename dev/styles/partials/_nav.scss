@@ -98,6 +98,7 @@ nav {
     right: 100%;
     left: 0;
     bottom: 0;
+    width: 100%;
     height: auto;
     transform: translateY(100%);
     transition: transform 0.8s;
@@ -123,6 +124,5 @@ nav {
 
   nav.expanded {
     transform: translateY(0%);
-    width:100%;
   }
 }
