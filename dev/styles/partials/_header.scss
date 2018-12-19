@@ -1,8 +1,6 @@
 header {
-  background: 
-    // url("../../../assets/dash.png") 50% 40% no-repeat,
-    // url("../../../assets/dash.png") 50% 63% no-repeat,
-    url("../../../assets/triangle-up.png") 50% 45%/400px 360px no-repeat,
+  background: url("../../../assets/triangle-up.png") 50% 45%/400px 360px
+      no-repeat,
     url("../../../assets/triangle-down.png") 50% 55%/400px 360px no-repeat,
     url("../../../assets/overlay.png") center/cover,
     url("../../../assets/header.jpg") center top/cover fixed;
@@ -18,25 +16,20 @@ header {
     border-bottom: 4px solid $accent;
     line-height: 2;
   }
-
 }
 
-@media (max-width: 860px){
+@media (max-width: 860px) {
   header {
     height: calc(100vh - 20px);
   }
 }
 
-
-@media (max-width:430px) {
+@media (max-width: 430px) {
   header {
-      background: 
-    url("../../../assets/triangle-up.png") 50% 45%/ contain no-repeat,
-    url("../../../assets/triangle-down.png") 50% 55%/ contain no-repeat,
-    url("../../../assets/overlay.png") center/cover,
-    url("../../../assets/header.jpg") center top/cover fixed;
+    background: url("../../../assets/triangle-up.png") 50% 45% / contain
+        no-repeat,
+      url("../../../assets/triangle-down.png") 50% 55% / contain no-repeat,
+      url("../../../assets/overlay.png") center/cover,
+      url("../../../assets/header.jpg") center top/cover fixed;
   }
-
 }
-
-

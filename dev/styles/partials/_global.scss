@@ -1,4 +1,3 @@
-// $black-shade: #191919;
 $black-shade: #2f2f2f;
 $white-shade: #f1f1f1;
 $darkGrey: #6c6c6c;
@@ -41,7 +40,7 @@ section {
 a,
 a:visited,
 a:active {
-  color: rgba(white, 0.0);
+  color: rgba(white, 0);
 }
 
 @media (max-width: 860px) {

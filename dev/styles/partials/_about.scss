@@ -8,12 +8,10 @@
       align-items: center;
     }
     &__image {
-      // background: grey;
       width: 40%;
       margin: 80px 0 50px 80px;
       box-shadow: -20px 20px #46969680;
       img {
-        // height: 100%;
         border-left: 3px solid white;
       }
     }
@@ -21,7 +19,6 @@
 }
 .email {
   @include primaryFont(22, $accent);
-  // font-weight: 700;
   display: block;
   text-align: center;
   margin-bottom: 50px;

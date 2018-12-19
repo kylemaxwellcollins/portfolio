@@ -1,27 +1,16 @@
 .section__contact {
   background: url("../../../assets/pattern.svg");
-  .contactContainer {
-    // display: flex;
-    // flex-direction: row-reverse;
-    // justify-content: space-between;
-    // align-items: center;
-  }
-  // .subheadingContainer--right {
-  //   width: 50%;
-  // }
   .contactForm {
     @include secondaryFont(16, $black-shade);
-    
-    margin:0 auto;
+
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-self: center;
-    // width: 50%;
     max-width: 600px;
     input,
     textarea {
       width: 100%;
-      // border: 1px solid rgba($lightGrey, 0.2);
       border: none;
       border-bottom: 1px solid $accent;
       padding: 10px 10px;
