@@ -50,7 +50,12 @@
           </li>
         </ul>
       </div>
+      <div class="particles__nav" id="particles-js-two"></div>
     </nav>
+
+    <div class="nav-toggle">
+      <div class="nav-toggle-bar"></div>
+    </div>
 
     <!-- MAIN STARTS HERE -->
     <main class="content">
@@ -315,7 +320,7 @@
             </div>
           </div>
         </div>
-        <div id="particles-js"></div>
+        <div class="particles__work" id="particles-js"></div>
       </section>
 
       <!-- SKILLS SECTION -->
@@ -375,7 +380,7 @@
             </div>
 
             <a class="email" href="mailto:kylemaxwellcollins@gmail.com"
-              >kylemaxwellcollins[at]gmail[dot]com</a
+              >kylemaxwellcollins@gmail.com</a
             >
 
             <form
@@ -431,6 +436,13 @@
       particlesJS.load("particles-js", "/assets/particles.json", function() {
         console.log("loaded");
       });
+      particlesJS.load(
+        "particles-js-two",
+        "/assets/particles.json",
+        function() {
+          console.log("loaded");
+        }
+      );
     </script>
   </body>
 </html>

@@ -62,15 +62,15 @@
       color: white;
     }
   }
+  .particles__work {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
-#particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
 
 @media (max-width: 860px) {
   .section__work {
