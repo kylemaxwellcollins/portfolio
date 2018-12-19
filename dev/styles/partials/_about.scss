@@ -5,13 +5,31 @@
     &__half {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
     &__image {
-      background: grey;
-      width: 50%;
+      // background: grey;
+      width: 40%;
       margin: 80px 0 50px 80px;
-      // height: 100%;
+      box-shadow: -20px 20px #46969680;
+      img {
+        // height: 100%;
+        border-left: 3px solid white;
+      }
     }
+  }
+}
+.email {
+  @include primaryFont(22, $accent);
+  // font-weight: 700;
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: all 0.5s;
+  &:hover {
+    text-shadow: 0 10px 5px rgba(0, 0, 0, 0.233);
+    transform: scale(1.1);
+    color: lighten($accent, 10%);
   }
 }
 
