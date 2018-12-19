@@ -454,7 +454,8 @@ nav {
   .nav-toggle {
     display: block; }
   nav.expanded {
-    transform: translateY(0%); } }
+    transform: translateY(0%);
+    width: 100%; } }
 
 .section__about {
   position: relative; }

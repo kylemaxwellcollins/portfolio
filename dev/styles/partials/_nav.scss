@@ -116,11 +116,13 @@ nav {
     }
   }
 
+
   .nav-toggle {
     display: block;
   }
 
   nav.expanded {
     transform: translateY(0%);
+    width:100%;
   }
 }
