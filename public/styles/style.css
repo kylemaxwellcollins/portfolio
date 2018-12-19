@@ -453,7 +453,7 @@ nav {
         font-size: 1.8rem;
         text-transform: uppercase; }
   .fixNav {
-    width: auto; }
+    position: fixed; }
   .fixNav + main {
     padding-top: 0; }
   .nav-toggle {
