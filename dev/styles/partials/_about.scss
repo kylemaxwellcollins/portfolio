@@ -17,18 +17,7 @@
     }
   }
 }
-.email {
-  @include primaryFont(22, $accent);
-  display: block;
-  text-align: center;
-  margin-bottom: 50px;
-  transition: all 0.5s;
-  &:hover {
-    text-shadow: 0 10px 5px rgba(0, 0, 0, 0.233);
-    transform: scale(1.1);
-    color: lighten($accent, 10%);
-  }
-}
+
 
 @media (max-width: 860px) {
   .section__about {

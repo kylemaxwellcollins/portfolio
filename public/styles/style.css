@@ -317,7 +317,33 @@ p {
     text-align: center; }
   .aboutContainer .textContainer {
     margin: 0 auto;
-    width: 80%; } }
+    width: 80%; }
+  .subheadingContainer .subheading--large {
+    font-family: "Montserrat", Sans-Serif;
+    color: #f1f1f1;
+    font-size: 9rem;
+    text-transform: uppercase; }
+  .subheadingContainer--right .subheading--large {
+    font-family: "Montserrat", Sans-Serif;
+    color: #f1f1f1;
+    font-size: 9rem;
+    text-transform: uppercase; } }
+
+@media (max-width: 500px) {
+  .subheadingContainer {
+    text-align: left; }
+  .aboutContainer .textContainer {
+    width: 95%; }
+  .subheadingContainer .subheading--large {
+    font-family: "Montserrat", Sans-Serif;
+    color: #f1f1f1;
+    font-size: 7rem;
+    text-transform: uppercase; }
+  .subheadingContainer--right .subheading--large {
+    font-family: "Montserrat", Sans-Serif;
+    color: #f1f1f1;
+    font-size: 7rem;
+    text-transform: uppercase; } }
 
 header {
   background: url("../../../assets/triangle-up.png") 50% 45%/400px 360px no-repeat, url("../../../assets/triangle-down.png") 50% 55%/400px 360px no-repeat, url("../../../assets/overlay.png") center/cover, url("../../../assets/header.jpg") center top/cover fixed;
@@ -338,7 +364,8 @@ header {
 
 @media (max-width: 430px) {
   header {
-    background: url("../../../assets/triangle-up.png") 50% 45%/contain no-repeat, url("../../../assets/triangle-down.png") 50% 55%/contain no-repeat, url("../../../assets/overlay.png") center/cover, url("../../../assets/header.jpg") center top/cover fixed; } }
+    background: url("../../../assets/triangle-up.png") 50% 45%/contain no-repeat, url("../../../assets/triangle-down.png") 50% 55%/contain no-repeat, url("../../../assets/overlay.png") center/cover, url("../../../assets/header.jpg") center top/cover fixed;
+    background-attachment: scroll; } }
 
 nav {
   position: relative;
@@ -430,7 +457,7 @@ nav {
 @media (max-width: 860px) {
   nav {
     background: rgba(47, 47, 47, 0.98);
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 100%;
     left: 0;
@@ -474,20 +501,6 @@ nav {
       .section__about .aboutContainer__image img {
         border-left: 3px solid white; }
 
-.email {
-  font-family: "Montserrat", Sans-Serif;
-  color: #e5a01e;
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  margin-bottom: 50px;
-  transition: all 0.5s; }
-  .email:hover {
-    text-shadow: 0 10px 5px rgba(0, 0, 0, 0.233);
-    transform: scale(1.1);
-    color: #eab34c; }
-
 @media (max-width: 860px) {
   .section__about .subheadingContainer {
     width: 100%; }
@@ -511,12 +524,14 @@ nav {
         padding: 20px 0 20px 60px; }
 
 @media (max-width: 860px) {
-  .section__skills .skillsContainer {
-    display: block; }
-    .section__skills .skillsContainer .skills__list {
-      margin: 0; }
-      .section__skills .skillsContainer .skills__list__item {
-        padding: 20px; } }
+  .section__skills {
+    background-attachment: scroll; }
+    .section__skills .skillsContainer {
+      display: block; }
+      .section__skills .skillsContainer .skills__list {
+        margin: 0; }
+        .section__skills .skillsContainer .skills__list__item {
+          padding: 20px; } }
 
 .section__work {
   position: relative;
@@ -590,6 +605,10 @@ nav {
     .section__work .workContainer__item__links {
       justify-content: space-between; } }
 
+@media (max-width: 500px) {
+  .section__work .workContainer__item__image {
+    width: 90%; } }
+
 .section__contact {
   background: url("../../../assets/pattern.svg"); }
   .section__contact .contactForm {
@@ -621,6 +640,26 @@ nav {
         background: #e5a01e;
         color: #f1f1f1;
         box-shadow: 0px 5px 10px rgba(229, 160, 30, 0.3); }
+  .section__contact .email {
+    font-family: "Montserrat", Sans-Serif;
+    color: #e5a01e;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    transition: all 0.5s; }
+    .section__contact .email:hover {
+      text-shadow: 0 10px 5px rgba(0, 0, 0, 0.233);
+      transform: scale(1.1);
+      color: #eab34c; }
+
+@media (max-width: 500px) {
+  .section__contact .email {
+    font-family: "Montserrat", Sans-Serif;
+    color: #e5a01e;
+    font-size: 1.8rem;
+    text-transform: uppercase; } }
 
 .btn__view {
   font-family: "Montserrat", Sans-Serif;
@@ -632,7 +671,9 @@ nav {
   padding: 0.5em 2em;
   cursor: pointer;
   overflow: hidden;
-  margin-right: 20px; }
+  margin-right: 20px;
+  width: 181px;
+  text-align: center; }
   .btn__view:before, .btn__view:after {
     content: "";
     position: absolute;
@@ -691,6 +732,13 @@ nav {
     right: 0;
     transform: translate3d(0, -105%, 0);
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+
+@media (max-width: 500px) {
+  .btn__view {
+    width: 100%;
+    margin: 0; }
+    .btn__view:first-child {
+      margin: 0 0 20px 0; } }
 
 footer {
   padding: 0;

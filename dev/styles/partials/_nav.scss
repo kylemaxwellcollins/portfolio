@@ -93,7 +93,7 @@ nav {
 @media (max-width: 860px) {
   nav {
     background: rgba($black-shade, 0.98);
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 100%;
     left: 0;

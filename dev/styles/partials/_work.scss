@@ -71,7 +71,6 @@
   }
 }
 
-
 @media (max-width: 860px) {
   .section__work {
     .workContainer {
@@ -94,6 +93,18 @@
         }
         &__links {
           justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .section__work {
+    .workContainer {
+      &__item {
+        &__image {
+          width: 90%;
         }
       }
     }

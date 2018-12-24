@@ -117,4 +117,16 @@
   @include primaryFont(18, $white-shade);
   @include btn-border-slide($white-shade, $accent, 1px, 0.8s);
   margin-right: 20px;
+  width: 181px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .btn__view {
+    &:first-child {
+      margin: 0 0 20px 0;
+    }
+    width: 100%;
+    margin: 0;
+  }
 }

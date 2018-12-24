@@ -183,4 +183,48 @@ p {
       width: 80%;
     }
   }
+
+  .subheadingContainer {
+    .subheading {
+      &--large {
+        @include primaryFont(90, $white-shade);
+      }
+    }
+  }
+
+  .subheadingContainer--right {
+    .subheading {
+      &--large {
+        @include primaryFont(90, $white-shade);
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .subheadingContainer {
+    text-align: left;
+  }
+
+  .aboutContainer {
+    .textContainer {
+      width: 95%;
+    }
+  }
+
+  .subheadingContainer {
+    .subheading {
+      &--large {
+        @include primaryFont(70, $white-shade);
+      }
+    }
+  }
+
+  .subheadingContainer--right {
+    .subheading {
+      &--large {
+        @include primaryFont(70, $white-shade);
+      }
+    }
+  }
 }

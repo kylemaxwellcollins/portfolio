@@ -21,6 +21,7 @@
 
 @media (max-width: 860px) {
   .section__skills {
+    background-attachment:scroll;
     .skillsContainer {
       display: block;
       .skills__list {
