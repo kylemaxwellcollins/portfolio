@@ -20,6 +20,9 @@ h4 {
 h5 {
   @include primaryFont(14, white);
   letter-spacing: 6px;
+  display: inline-block;
+  border-bottom: 4px solid $accent;
+  line-height: 2;
 }
 
 p {
@@ -202,6 +205,14 @@ p {
 }
 
 @media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h5 {
+    font-size: 0.8rem;
+    border-bottom: 2px solid $accent;
+  }
+
   .subheadingContainer {
     text-align: left;
   }

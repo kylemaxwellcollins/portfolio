@@ -9,13 +9,6 @@ header {
   display: flex;
   align-items: center;
   margin: 10px;
-  
-  h5 {
-    display: inline-block;
-    margin: 30px;
-    border-bottom: 4px solid $accent;
-    line-height: 2;
-  }
 }
 
 @media (max-width: 860px) {
@@ -24,7 +17,7 @@ header {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   header {
     background: url("../../../assets/triangle-up.png") 50% 45% / contain
     no-repeat,
@@ -32,6 +25,6 @@ header {
     url("../../../assets/overlay.png") center/cover,
     url("../../../assets/header.jpg") center top/cover fixed;
     background-attachment:scroll;
-    
+    margin: 0;
   }
 }

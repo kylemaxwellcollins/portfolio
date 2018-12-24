@@ -17,6 +17,10 @@
       margin-bottom: 20px;
       resize: none;
       box-shadow: 0px 5px 10px rgba($darkGrey, 0.2);
+      &:active, &:focus {
+        border: 2px solid $accent;  
+      }
+
     }
 
     input[type="submit"] {
@@ -24,12 +28,12 @@
       background: white;
       color: $darkGrey;
 
-      transition: box-shadow 0.5s;
+      transition: all 0.5s;
       box-shadow: 0px 8px 10px rgba($darkGrey, 0.2);
       &:hover {
         background: $accent;
         color: $white-shade;
-        box-shadow: 0px 5px 10px rgba($accent, 0.3);
+        box-shadow: 0px 8px 10px rgba($accent, 0.3);
       }
     }
   }

@@ -119,6 +119,11 @@
   margin-right: 20px;
   width: 181px;
   text-align: center;
+  &:focus {
+    // border: 1px solid $accent;
+    color: $accent;
+
+  }
 }
 
 @media (max-width: 500px) {

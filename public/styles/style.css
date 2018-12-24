@@ -207,7 +207,10 @@ h5 {
   color: white;
   font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: 6px; }
+  letter-spacing: 6px;
+  display: inline-block;
+  border-bottom: 4px solid #e5a01e;
+  line-height: 2; }
 
 p {
   font-family: "Roboto", Sans-Serif;
@@ -330,6 +333,11 @@ p {
     text-transform: uppercase; } }
 
 @media (max-width: 500px) {
+  h1 {
+    font-size: 4rem; }
+  h5 {
+    font-size: 0.8rem;
+    border-bottom: 2px solid #e5a01e; }
   .subheadingContainer {
     text-align: left; }
   .aboutContainer .textContainer {
@@ -352,20 +360,16 @@ header {
   display: flex;
   align-items: center;
   margin: 10px; }
-  header h5 {
-    display: inline-block;
-    margin: 30px;
-    border-bottom: 4px solid #e5a01e;
-    line-height: 2; }
 
 @media (max-width: 860px) {
   header {
     height: calc(100vh - 20px); } }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   header {
     background: url("../../../assets/triangle-up.png") 50% 45%/contain no-repeat, url("../../../assets/triangle-down.png") 50% 55%/contain no-repeat, url("../../../assets/overlay.png") center/cover, url("../../../assets/header.jpg") center top/cover fixed;
-    background-attachment: scroll; } }
+    background-attachment: scroll;
+    margin: 0; } }
 
 nav {
   position: relative;
@@ -630,16 +634,20 @@ nav {
       margin-bottom: 20px;
       resize: none;
       box-shadow: 0px 5px 10px rgba(108, 108, 108, 0.2); }
+      .section__contact .contactForm input:active, .section__contact .contactForm input:focus,
+      .section__contact .contactForm textarea:active,
+      .section__contact .contactForm textarea:focus {
+        border: 2px solid #e5a01e; }
     .section__contact .contactForm input[type="submit"] {
       border: 1px solid #e5a01e;
       background: white;
       color: #6c6c6c;
-      transition: box-shadow 0.5s;
+      transition: all 0.5s;
       box-shadow: 0px 8px 10px rgba(108, 108, 108, 0.2); }
       .section__contact .contactForm input[type="submit"]:hover {
         background: #e5a01e;
         color: #f1f1f1;
-        box-shadow: 0px 5px 10px rgba(229, 160, 30, 0.3); }
+        box-shadow: 0px 8px 10px rgba(229, 160, 30, 0.3); }
   .section__contact .email {
     font-family: "Montserrat", Sans-Serif;
     color: #e5a01e;
@@ -732,6 +740,8 @@ nav {
     right: 0;
     transform: translate3d(0, -105%, 0);
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+  .btn__view:focus {
+    color: #e5a01e; }
 
 @media (max-width: 500px) {
   .btn__view {
