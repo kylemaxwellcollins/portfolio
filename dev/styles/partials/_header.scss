@@ -13,18 +13,14 @@ header {
 
 @media (max-width: 860px) {
   header {
-    height: calc(100vh - 20px);
-  }
-}
-
-@media (max-width: 500px) {
-  header {
-    background: url("../../../assets/triangle-up.png") 50% 45% / contain
-    no-repeat,
-    url("../../../assets/triangle-down.png") 50% 55% / contain no-repeat,
-    url("../../../assets/overlay.png") center/cover,
-    url("../../../assets/header.jpg") center top/cover fixed;
+    height: calc(100vh - 50px);
     background-attachment:scroll;
     margin: 0;
   }
 }
+
+// @media (max-width: 500px) {
+//   header {
+
+//   }
+// }
